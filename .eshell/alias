@@ -1,0 +1,6 @@
+alias gem  $*
+alias ! X $*
+alias l. ls -d .*
+alias ll ls -l $*
+alias rm rm -i $*
+alias b $*

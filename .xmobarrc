@@ -1,0 +1,16 @@
+Config { font = "xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true:bold"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = Top
+       , lowerOnStart = True
+       , commands = [ Run StdinReader
+                    , Run Network "wlan0" ["-L","0","-H","100","--normal","#A6E22E","--high","#FF669D"] 10
+                    , Run Cpu ["-L","3","-H","51","--normal","#A6E22E","--high","#FF669D"] 10
+                    , Run Memory ["-t","Mem:<usedratio>%"] 10
+                    , Run Date "%a %b %_d %H:%M" "date" 10
+                    , Run Battery ["-L","20","-H","80","--low","#FF669D","--normal","#E6DB74","--high","#A6E22E"] 10
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ %cpu%|%memory%|%wlan0%|<fc=#EE9A00>%date%</fc>|%battery%"
+       }

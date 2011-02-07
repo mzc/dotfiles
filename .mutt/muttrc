@@ -1,0 +1,63 @@
+source ~/.mutt/mail.imap
+source ~/.mutt/keybindings
+source ~/.mutt/colors
+set alias_file = ~/.mutt/aliases
+source ~/.mutt/aliases
+source ~/.mutt/hooks
+
+set editor        = "emacs -Q -nw"
+set print_command = "a2ps -g -Email -d -1 -M letter -R"
+
+# main options
+set copy          = yes
+set ascii_chars   = yes
+set move          = no
+set mark_old      = no
+set indent_str    = "> "
+set auto_tag      = no
+set quit          = ask-yes
+
+set mail_check            = 120
+set timeout               = 0
+set imap_passive          = no
+set imap_check_subscribed = yes
+set imap_keepalive        = 300
+
+# index
+set sort     = 'threads'                        # like gmail
+set sort_aux = 'reverse-last-date-received'     # like gmail
+set sort_re  = yes                              # thread based on reply_regexp
+
+# pager
+set pager_index_lines = 8                       # show 8 messages when in pager
+set pager_context     = 5                       # show five lines when skipping in pager
+set pager_stop        = yes                     # don't go to next message automatically
+set menu_scroll       = yes                     # scroll in menus 
+set smart_wrap        = yes                     # don't split words
+set tilde             = yes                     # show tildes like in vim
+set markers           = no                      # no ugly plus signs
+
+# composing mail
+set reverse_name   = yes
+set fast_reply     = yes
+set include        = yes                        # include message in replies
+set mime_forward   = no                         # forward attachments as part of body
+set forward_format = "Fwd: %s"                  # format for subject when forwarding
+set forward_quote  = yes                        # include message in forwards
+set fcc_attach     = yes                        # save attachments with the body
+
+# store locally to speed things up
+set header_cache     = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/certificates
+
+# mail head
+ignore *
+unignore date from to cc subject
+unignore organization organisation x-mailer: x-newsreader: x-mailing-list:
+unignore posted-to:
+hdr_order Date From To Cc Subject
+
+alternative_order text/plain text/html * 
+auto_view text/html application/x-gunzip application/postscript image/gif application/x-tar-gz application/msword
+

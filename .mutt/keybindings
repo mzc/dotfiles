@@ -1,0 +1,28 @@
+# -*- mode: Muttrc; -*-
+
+bind index \Cn     next-entry
+bind index \Cp     previous-entry
+bind index <Esc>n  next-thread
+bind index <Esc>p  previous-thread
+bind index \Cv     next-page
+bind index <Esc>v  previous-page
+bind index <Space> collapse-thread
+bind index <Esc><  first-entry
+bind index <Esc>>  last-entry
+
+bind index Y       imap-fetch-mail
+
+bind pager \Cn     next-line
+bind pager \Cp     previous-line
+bind pager \Cv     next-page
+bind pager <Space> next-page
+bind pager <Esc>v  previous-page
+bind pager <Esc><  top
+bind pager <Esc>>  bottom
+
+bind browser \Cn     next-entry
+bind browser \Cp     previous-entry
+bind browser \Cv     next-page
+bind browser <Esc>v  previous-page
+bind browser <Esc><  first-entry
+bind browser <Esc>>  last-entry
