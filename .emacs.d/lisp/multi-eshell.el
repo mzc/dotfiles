@@ -37,11 +37,11 @@
   "Simple support for having multiple shells open."
   :group 'languages)
 
-(defcustom multi-eshell-shell-function '(shell)
+(defcustom multi-eshell-shell-function '(eshell)
   "Command called to create shell"
   :group 'multi-eshell)
 
-(defcustom multi-eshell-name "*shell*" "The name of the buffer opened by the shell command."
+(defcustom multi-eshell-name "*eshell*" "The name of the buffer opened by the shell command."
   :type 'string
   :group 'multi-eshell)
 
