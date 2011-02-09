@@ -491,18 +491,6 @@ occurence of CHAR."
       (add-to-list 'auto-mode-alist '("\\.pp$" . puppet-mode))))
 
 ;;;---------------------------------------------------------------
-;;; visual-basic-mode
-;;;---------------------------------------------------------------
-(if (at-office)
-    (progn
-      (require 'visual-basic-mode)
-      (add-hook 'visual-basic-mode-hook 'muli-basic-mode)))
-
-(defun muli-basic-mode ()
-  (interactive)
-  (setq tab-width 4))
-
-;;;---------------------------------------------------------------
 ;;; Gtags
 ;;;---------------------------------------------------------------
 (require 'gtags)
