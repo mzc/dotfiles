@@ -23,14 +23,18 @@ alias vvqa='virt-viewer -c qemu+ssh://ubuntu@hm1/system hm1-3-vqa'
 alias vvdeb='virt-viewer -c qemu+ssh://ubuntu@hm1/system hm1-7-vdeb'
 alias vvldap='virt-viewer -c qemu+ssh://ubuntu@hm1/system hm1-8-vldap'
 
-alias vvsbr='virt-viewer -c qemu+ssh://ubuntu@hp1/system hp1-1-vsbr'
-alias vvpymdem='virt-viewer -c qemu+ssh://ubuntu@hp1/system hp1-2-vpymdem'
-alias vv10070='virt-viewer -c qemu+ssh://ubuntu@hp1/system hp1-3-v10070'
-alias vv10063b='virt-viewer -c qemu+ssh://ubuntu@hp1/system hp1-5-v10063b'
-alias vv10023b='virt-viewer -c qemu+ssh://ubuntu@hp1/system hp1-6-v10023b'
+#alias vvpymdem='virt-viewer -c qemu+ssh://ubuntu@hp1/system hp1-2-vpymdem'
 
-alias vboss='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-1-v10101'
+alias vvboss='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-1-v10101'
+alias vvdemo='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-2-vdemo'
+alias vvwww='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-3-vwww'
+alias vvboden='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-4-boden'
 alias vvmatrix='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-5-vmatrix'
+alias vv10023b='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-6-v10023b'
+alias vvflash='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-7-vflash'
+alias vvsbr='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-8-vsbr'
+alias vv10070='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-9-v10070'
+alias vv10063b='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-10-v10063b'
 
 alias vv10102='virt-viewer -c qemu+ssh://ubuntu@120.146.205.173:22212/system muli10102-1-v10102'
 
@@ -66,22 +70,6 @@ alias mvldap='ssh -X mulisu@vldap'
 # pymble firewall
 alias rpym='ssh root@202.5.96.131'
 
-# hp1
-
-alias uvsbr='ssh -X ubuntu@vsbr'
-
-alias uvpymdem='ssh -X ubuntu@vpymdem'
-alias mvpymdem='ssh -X mulisu@vpymdem'
-
-alias uv10070='ssh -X ubuntu@v10070'
-alias mv10070='ssh -X mulisu@v10070'
-
-alias uv10063b='ssh -X ubuntu@v10063b'
-alias mv10063b='ssh -X mulisu@v10063b'
-
-alias uv10023b='ssh -X ubuntu@v10023b'
-alias mv10023b='ssh -X mulisu@v10023b'
-
 # hg2
 
 alias uboss='ssh -X ubuntu@boss'
@@ -95,7 +83,19 @@ alias uvwww='ssh -X muliadmin@vwww'
 alias uvmatrix='ssh -X ubuntu@vmatrix'
 alias mvmatrix='ssh -X mulisu@vmatrix'
 
+alias uv10023b='ssh -X ubuntu@192.168.201.65'
+alias mv10023b='ssh -X mulisu@192.168.201.65'
+
 alias uvflash='ssh -X ubuntu@vflash'
+
+alias uvsbr='ssh -X ubuntu@vsbr'
+alias mvsbr='ssh -X mulisu@vsbr'
+
+alias uv10070='ssh -X ubuntu@192.168.201.81'
+alias mv10070='ssh -X mulisu@192.168.201.81'
+
+alias uv10063b='ssh -X ubuntu@192.168.201.89'
+alias mv10063b='ssh -X mulisu@192.168.201.89'
 
 # workstation
 
