@@ -576,10 +576,6 @@ occurence of CHAR."
 ;; Disable scroll-bar
 (scroll-bar-mode nil)
 
-;; If disable menu-bar and tool-bar, emacs will not be maximized properly
-;;; when it starup.
-;; P.S.: Configure in Xresources file to maxmize emacs when it starup.
-
 ;; Disable menu-bar
 (menu-bar-mode nil)
 
