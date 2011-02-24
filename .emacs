@@ -15,6 +15,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/cedet/common")
 (add-to-list 'load-path "~/.emacs.d/lisp/ecb")
 (add-to-list 'load-path "~/.emacs.d/lisp/auto-complete")
+(add-to-list 'load-path "~/.emacs.d/lisp/yaml-mode");
 
 (add-to-list 'load-path "/etc")
 
