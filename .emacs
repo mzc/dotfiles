@@ -257,7 +257,6 @@ occurence of CHAR."
 (require 'speedbar)
 (global-set-key [f10] 'speedbar)
 
-
 ;;;---------------------------------------------------------------
 ;;; Highligh-symbol
 ;;;---------------------------------------------------------------
@@ -484,7 +483,6 @@ occurence of CHAR."
 ;;;---------------------------------------------------------------
 ;;; puppet-mode
 ;;;---------------------------------------------------------------
-
 (if (at-office)
     (progn
       (require 'puppet-mode)
@@ -574,27 +572,6 @@ occurence of CHAR."
 ;; frame size
 (setq initial-frame-alist '((top . 40) (left . 0)
 			    (width . 128) (height . 68)))
-
-;; fullscreen
-;(global-set-key [f9] 'fullscreen)
-;(global-set-key [f10] 'maximize-frame)
-
-;(defun fullscreen ()
-;  (interactive)
-;  (x-send-client-message
-;   nil 0 nil "_NET_WM_STATE" 32
-;   '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
-
-;; maximize
-;(defun maximize-frame ()
-;  (interactive)
-;  (x-send-client-message
-;   nil 0 nil "_NET_WM_STATE" 32
-;   '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
-;  (interactive)
-;  (x-send-client-message
-;   nil 0 nil "_NET_WM_STATE" 32
-;   '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0)))
 
 ;; Disable scroll-bar
 (scroll-bar-mode nil)
