@@ -14,6 +14,8 @@
 .emacs.d/lisp/yaml-mode/
 .emacs.d/.org-id-locations
 .emacs.d/ac-comphist.dat
+.emacs.d/ede-projects.el
+.emacs.d/abbrev_defs
 .mutt/cache
 .mutt/certificates
 .mutt/mail.imap
