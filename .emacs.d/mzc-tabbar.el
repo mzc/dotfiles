@@ -1,0 +1,6 @@
+(require 'tabbar)
+(tabbar-mode)
+(global-set-key [M-down] 'tabbar-backward-group)
+(global-set-key [M-up] 'tabbar-forward-group)
+(global-set-key [M-left] 'tabbar-backward)
+(global-set-key [M-right] 'tabbar-forward)
