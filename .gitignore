@@ -17,6 +17,9 @@
 .emacs.d/vendor/git-emacs/
 .emacs.d/vendor/yaml-mode/
 .emacs.d/vendor/auto-complete/
+.emacs.d/vendor/Pymacs/
+.emacs.d/vendor/python-mode/
+.emacs.d/vendor/ropemacs/
 
 .mutt/cache
 .mutt/certificates
