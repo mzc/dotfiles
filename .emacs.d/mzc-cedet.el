@@ -35,7 +35,7 @@
 (defun mzc-cedet-hook ()
   (local-set-key [(control return)] 'semantic-ia-complete-symbol-menu)
   (local-set-key (kbd "C-c p") 'semantic-analyze-proto-impl-toggle))
-;  (local-set-key "\C-c?" 'semantic-ia-complete-symbol)
-;  (local-set-key "\C-c>" 'semantic-complete-analyze-inline)
+;  (local-set-key (kbd "C-c ?") 'semantic-ia-complete-symbol)
+;  (local-set-key (kbd "C-c >") 'semantic-complete-analyze-inline)
 
 (add-hook 'c-mode-common-hook 'mzc-cedet-hook)

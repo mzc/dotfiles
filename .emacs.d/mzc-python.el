@@ -25,5 +25,5 @@
 	    (set-variable 'py-indent-offset 4)
 	    (set-variable 'py-smart-indentation nil)
 	    (set-variable 'indent-tabs-mode nil)
-	    (define-key py-mode-map "\C-m" 'newline-and-indent)))
+	    (define-key py-mode-map (kbd "C-m") 'newline-and-indent)))
 
