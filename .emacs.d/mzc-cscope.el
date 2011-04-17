@@ -1,5 +1,8 @@
 (require 'xcscope)
 
+(define-key global-map (kbd "M-.")     'cscope-find-global-definition)
+(define-key global-map (kbd "M-*")     'cscope-pop-mark)
+
 (define-key global-map (kbd "C-c s s") 'cscope-find-this-symbol)
 (define-key global-map (kbd "C-c s g") 'cscope-find-global-definition)
 (define-key global-map (kbd "C-c s G") 'cscope-find-global-definition-no-prompting)
