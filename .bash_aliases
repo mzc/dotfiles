@@ -9,12 +9,12 @@ alias ec='emacsclient -c -a ""'
 # libvirt stuff
 
 alias lshm1='virsh -c qemu+ssh://ubuntu@hm1/system list --all'
-alias lshp1='virsh -c qemu+ssh://ubuntu@hp1/system list --all'
+alias lshg1='virsh -c qemu+ssh://ubuntu@hg1/system list --all'
 alias lshg2='virsh -c qemu+ssh://ubuntu@hg2/system list --all'
 alias lssga='virsh -c qemu+ssh://ubuntu@120.146.205.173:22212/system list --all'
 
 alias ghm1='virsh -c qemu+ssh://ubuntu@hm1/system'
-alias ghp1='virsh -c qemu+ssh://ubuntu@hp1/system'
+alias ghg1='virsh -c qemu+ssh://ubuntu@hg1/system'
 alias ghg2='virsh -c qemu+ssh://ubuntu@hg2/system'
 alias gsga='virsh -c qemu+ssh://ubuntu@120.146.205.173:22212/system'
 
@@ -23,7 +23,7 @@ alias vvqa='virt-viewer -c qemu+ssh://ubuntu@hm1/system hm1-3-vqa'
 alias vvdeb='virt-viewer -c qemu+ssh://ubuntu@hm1/system hm1-7-vdeb'
 alias vvldap='virt-viewer -c qemu+ssh://ubuntu@hm1/system hm1-8-vldap'
 
-#alias vvpymdem='virt-viewer -c qemu+ssh://ubuntu@hp1/system hp1-2-vpymdem'
+alias vvpuppet='virt-viewer -c qemu+ssh://ubuntu@hg1/system hg1-1-vpuppet'
 
 alias vvboss='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-1-v10101'
 alias vvdemo='virt-viewer -c qemu+ssh://ubuntu@hg2/system hg2-2-vdemo'
@@ -40,8 +40,8 @@ alias vv10102='virt-viewer -c qemu+ssh://ubuntu@120.146.205.173:22212/system mul
 
 # host
 
-alias uhp1='ssh -X ubuntu@hp1'
 alias uhm1='ssh -X ubuntu@hm1'
+alias uhg1='ssh -X ubuntu@hg1'
 alias uhg2='ssh -X ubuntu@hg2'
 alias umuli10102='ssh -X -p 22212 ubuntu@120.146.205.173'
 
@@ -69,6 +69,10 @@ alias mvldap='ssh -X mulisu@vldap'
 
 # pymble firewall
 alias rpym='ssh root@202.5.96.131'
+
+# hg1
+alias upuppet='ssh -X ubuntu@puppet'
+alias uvpuppet='ssh -X ubuntu@vpuppet'
 
 # hg2
 
