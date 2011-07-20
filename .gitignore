@@ -1,29 +1,29 @@
-.xmonad/xmonad-x86_64-linux
-.xmonad/xmonad-i386-linux
-.xmonad/xmonad.errors
-.xmonad/xmonad.hi
-.xmonad/xmonad.o
+xmonad/xmonad-x86_64-linux
+xmonad/xmonad-i386-linux
+xmonad/xmonad.errors
+xmonad/xmonad.hi
+xmonad/xmonad.o
 
-.eshell/lastdir
-.eshell/history
+eshell/lastdir
+eshell/history
 
-.emacs.d/.org-id-locations
-.emacs.d/auto-save-list/
-.emacs.d/ac-comphist.dat
-.emacs.d/ede-projects.el
-.emacs.d/abbrev_defs
-.emacs.d/vendor/cedet/
-.emacs.d/vendor/ecb/
-.emacs.d/vendor/git-emacs/
-.emacs.d/vendor/yaml-mode/
-.emacs.d/vendor/auto-complete/
-.emacs.d/vendor/Pymacs/
-.emacs.d/vendor/python-mode/
-.emacs.d/vendor/ropemacs/
+emacs.d/.org-id-locations
+emacs.d/auto-save-list/
+emacs.d/ac-comphist.dat
+emacs.d/ede-projects.el
+emacs.d/abbrev_defs
+emacs.d/vendor/cedet/
+emacs.d/vendor/ecb/
+emacs.d/vendor/git-emacs/
+emacs.d/vendor/yaml-mode/
+emacs.d/vendor/auto-complete/
+emacs.d/vendor/Pymacs/
+emacs.d/vendor/python-mode/
+emacs.d/vendor/ropemacs/
 
-.mutt/cache
-.mutt/certificates
-.mutt/mail.imap
+mutt/cache/
+mutt/certificates
+mutt/mail.imap
 
 *~
 *.elc

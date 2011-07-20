@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for l in Xdefaults bash_aliases emacs.d eshell mailcap urlview xinitrc xmobarrc xmodmap xmonad mutt
+do
+    ln -snf configure/$l ../.$l
+done
