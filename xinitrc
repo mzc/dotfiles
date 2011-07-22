@@ -9,7 +9,7 @@ unclutter &
 
 while true
 do
-    feh --bg-scale "$(find ~/.wallpapers -name *.jpg -o -name *.png | shuf -n 1)"
+    feh --bg-scale "$(find ~/.wallpapers | shuf -n 1)"
     sleep 15m
 done &
 
