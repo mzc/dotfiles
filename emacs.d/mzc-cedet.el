@@ -22,10 +22,10 @@
 
 (add-hook 'semantic-init-hooks 'mzc-semantic-hook)
 
-;; Enable support for gnu global
-(require 'semanticdb-global)
-(semanticdb-enable-gnu-global-databases 'c-mode)
-(semanticdb-enable-gnu-global-databases 'c++-mode)
+;; ;; Enable support for gnu global
+;; (require 'semanticdb-global)
+;; (semanticdb-enable-gnu-global-databases 'c-mode)
+;; (semanticdb-enable-gnu-global-databases 'c++-mode)
 
 (ede-cpp-root-project "Go"
 		      :name "Go project"
