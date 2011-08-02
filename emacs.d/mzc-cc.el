@@ -21,26 +21,26 @@
                          c-lineup-gcc-asm-reg
                          c-lineup-arglist-tabs-only))))))
 
-(add-hook 'c-mode-hook
-          (lambda ()
-	    (setq indent-tabs-mode t)
-	    (c-set-style "linux-tabs-only")))
+;; (add-hook 'c-mode-hook
+;;           (lambda ()
+;; 	    (setq indent-tabs-mode t)
+;; 	    (c-set-style "linux-tabs-only")))
 
 (add-hook 'c++-mode-hook
           (lambda ()
 	    (setq indent-tabs-mode t)
 	    (c-set-style "linux-tabs-only")))
 
-;(add-hook 'c-mode-hook
-;          (lambda ()
-;            (let ((filename (buffer-file-name)))
-;              ;; Enable kernel mode for the appropriate files
-;	      (when (and filename
-;			 (string-match (expand-file-name "~/repo/linux2.6") filename))
-;                (setq indent-tabs-mode t)
-;                (c-set-style "linux-tabs-only"))
-;	      ;; Muli progrmming style, now it is same as linux
-;	      (when (and filename
-;			 (string-match (expand-file-name "~/bzr-local/server") filename))
-;		(setq indent-tabs-mode t)
-;		(c-set-style "linux-tabs-only")))))
+(add-hook 'c-mode-hook
+         (lambda ()
+           (let ((filename (buffer-file-name)))
+             ;; Enable kernel mode for the appropriate files
+	      (when (and filename
+			 (string-match (expand-file-name "~/repo/linux2.6") filename))
+               (setq indent-tabs-mode t)
+               (c-set-style "linux-tabs-only"))
+	      ;; Muli progrmming style, now it is same as linux
+	      (when (and filename
+			 (string-match (expand-file-name "~/bzr-local/server") filename))
+		(setq indent-tabs-mode t)
+		(c-set-style "linux-tabs-only")))))
