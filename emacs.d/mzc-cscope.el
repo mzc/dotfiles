@@ -1,3 +1,6 @@
+;;; Load my local path
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/cscope")
+
 (require 'xcscope)
 
 (define-key global-map (kbd "M-.")     'cscope-find-global-definition)

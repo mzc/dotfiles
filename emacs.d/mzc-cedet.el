@@ -1,3 +1,6 @@
+;;; Load my local path
+(add-to-list 'load-path "~/.emacs.d/vendor/cedet/common")
+
 (require 'cedet)
 
 ;; Enable EDE (Project Management) features

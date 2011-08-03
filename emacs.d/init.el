@@ -2,24 +2,10 @@
 ;;; Load my local path
 ;;;---------------------------------------------------------------
 (add-to-list 'load-path "/usr/share/emacs23/site-lisp")
-
 (add-to-list 'load-path "/usr/share/emacs/site-lisp")
 ;(add-to-list 'load-path "/usr/share/emacs/site-lisp/global")
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/haskell-mode")
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/cscope")
-
-(add-to-list 'load-path "~/repo/go/misc/emacs")
-
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/vendor")
-(add-to-list 'load-path "~/.emacs.d/vendor/git-emacs")
-(add-to-list 'load-path "~/.emacs.d/vendor/cedet/common")
-(add-to-list 'load-path "~/.emacs.d/vendor/ecb")
-(add-to-list 'load-path "~/.emacs.d/vendor/auto-complete")
-(add-to-list 'load-path "~/.emacs.d/vendor/yaml-mode")
-(add-to-list 'load-path "~/.emacs.d/vendor/python-mode")
-(add-to-list 'load-path "~/.emacs.d/vendor/Pymacs")
-
 (add-to-list 'load-path "/etc")
 
 ;;;---------------------------------------------------------------
