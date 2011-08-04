@@ -1,17 +1,17 @@
 ;;; Load my local path
 (add-to-list 'load-path "~/.emacs.d/vendor/python-mode")
-(add-to-list 'load-path "~/.emacs.d/vendor/Pymacs")
+;; (add-to-list 'load-path "~/.emacs.d/vendor/Pymacs")
 
-;;; Pymacs
-(autoload 'pymacs-apply "pymacs")
-(autoload 'pymacs-call "pymacs")
-(autoload 'pymacs-eval "pymacs" nil t)
-(autoload 'pymacs-exec "pymacs" nil t)
-(autoload 'pymacs-load "pymacs" nil t)
+;; ;;; Pymacs
+;; (autoload 'pymacs-apply "pymacs")
+;; (autoload 'pymacs-call "pymacs")
+;; (autoload 'pymacs-eval "pymacs" nil t)
+;; (autoload 'pymacs-exec "pymacs" nil t)
+;; (autoload 'pymacs-load "pymacs" nil t)
 
-;;; Rope
-(pymacs-load "ropemacs" "rope-")
-(setq ropemacs-enable-autoimport t)
+;; ;;; Rope
+;; (pymacs-load "ropemacs" "rope-")
+;; (setq ropemacs-enable-autoimport t)
 
 ;;; Python-mode
 (autoload 'python-mode "python-mode" "Python Mode." t)
