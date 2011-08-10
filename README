@@ -1,0 +1,8 @@
+My config files.
+
+Install
+-------
+    Change into the clone repository directory and run:
+    ./make_env
+
+    This will create symlinks for all config files in home directory.
