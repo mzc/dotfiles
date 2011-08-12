@@ -8,8 +8,8 @@
 
 ;(semantic-load-enable-minimum-features)
 ;(semantic-load-enable-code-helpers)
-;(semantic-load-enable-guady-code-helpers)
-(semantic-load-enable-excessive-code-helpers)
+(semantic-load-enable-guady-code-helpers)
+;(semantic-load-enable-excessive-code-helpers)
 ;(semantic-load-enable-semantic-debugging-helpers)
 
 (require 'semantic-ia)
