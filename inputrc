@@ -1,0 +1,12 @@
+# Ignore case when completing
+set completion-ignore-case on
+
+# Replace the first part of completions with "..."
+set completion-prefix-display-length 2
+
+# Make completions appear immediately after pressing TAB once, instead of twice
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+
+# Treat underscores and hyphens are equally when completing
+set completion-map-case on
