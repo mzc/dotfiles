@@ -20,6 +20,7 @@ emacs.d/vendor/auto-complete/
 emacs.d/vendor/Pymacs/
 emacs.d/vendor/python-mode/
 emacs.d/vendor/ropemacs/
+emacs.d/vendor/emacs-evernote-mode/
 
 mutt/cache/
 mutt/certificates
