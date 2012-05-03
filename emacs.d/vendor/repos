@@ -4,6 +4,7 @@ cedet			mzc/cedet
 ecb			mzc/ecb
 emacs-evernote-mode	awasira/emacs-evernote-mode
 git-emacs		tsgates/git-emacs
+haskell			haskell/haskell-mode
 popup-el		m2ym/popup-el
 Pymacs			pinard/Pymacs
 python-mode		emacsmirror/python-mode
