@@ -7,11 +7,43 @@
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/vendor")
 (add-to-list 'load-path "/etc")
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
-;;;---------------------------------------------------------------
-;;; el-get
-;;;---------------------------------------------------------------
-(load-library "mzc-el-get")
+(unless 
+    (require 'el-get nil t)
+  (url-retrieve "https://raw.github.com/dimitri/el-get/master/el-get-install.el"
+		(lambda (s) 
+		  (goto-char (point-max))
+		  (eval-print-last-sexp))))
+
+;; local sources
+(setq el-get-sources
+      '(el-get
+	(:name magit
+	       :after (lambda () (global-set-key (kbd "C-x C-z") 'magit-status)))
+	(:name magithub)
+	(:name pymacs)
+	(:name ropemacs)
+	(:name python-mode
+	       :after (load-library "mzc-python"))
+	(:name haskell-mode
+	       :after (load-library "mzc-haskell"))
+	(:name popup
+	       :after (load-library "mzc-popup"))
+	(:name yaml-mode
+	       :after (load-library "mzc-yaml"))
+	(:name auto-complete
+	       :after (load-library "mzc-auto-complete"))
+	(:name cedet
+	       :after (load-library "mzc-cedet"))
+	(:name ecb
+	       :after (load-library "mzc-ecb"))
+	))
+
+(setq my-packages
+      (append '(el-get)
+	      (mapcar 'el-get-source-name el-get-sources)))
+(el-get 'sync my-packages)
 
 ;;;---------------------------------------------------------------
 ;;; Utilities
@@ -84,16 +116,6 @@
 ;(load-library "mzc-gtags")
 
 ;;;---------------------------------------------------------------
-;;; Popup
-;;;---------------------------------------------------------------
-(load-library "mzc-popup")
-
-;;;---------------------------------------------------------------
-;;; Auto complete
-;;;---------------------------------------------------------------
-(load-library "mzc-auto-complete")
-
-;;;---------------------------------------------------------------
 ;;; Evernote
 ;;;---------------------------------------------------------------
 (load-library "mzc-evernote")
@@ -107,16 +129,6 @@
 ;;; Speedbar
 ;;;---------------------------------------------------------------
 (load-library "mzc-speedbar")
-
-;;;---------------------------------------------------------------
-;;; Cedet
-;;;---------------------------------------------------------------
-(load-library "mzc-cedet")
-
-;;;---------------------------------------------------------------
-;;; ECB
-;;;---------------------------------------------------------------
-(load-library "mzc-ecb")
 
 ;;;---------------------------------------------------------------
 ;;; Gdb
@@ -134,16 +146,6 @@
 (load-library "mzc-flex")
 
 ;;;---------------------------------------------------------------
-;;; Haskell
-;;;---------------------------------------------------------------
-(load-library "mzc-haskell")
-
-;;;---------------------------------------------------------------
-;;; Yaml
-;;;---------------------------------------------------------------
-(load-library "mzc-yaml")
-
-;;;---------------------------------------------------------------
 ;;; Git
 ;;;---------------------------------------------------------------
 (load-library "mzc-git")
@@ -157,11 +159,6 @@
 ;;; Puppet
 ;;;---------------------------------------------------------------
 ;(load-library "mzc-puppet")
-
-;;;---------------------------------------------------------------
-;;; Python
-;;;---------------------------------------------------------------
-(load-library "mzc-python")
 
 ;;;---------------------------------------------------------------
 ;;; IPython
