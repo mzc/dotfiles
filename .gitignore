@@ -14,17 +14,7 @@ emacs.d/abbrev_defs
 emacs.d/ac-comphist.dat
 emacs.d/auto-save-list/
 emacs.d/ede-projects.el
-emacs.d/vendor/auto-complete/
-emacs.d/vendor/cedet/
-emacs.d/vendor/ecb/
 emacs.d/vendor/emacs-evernote-mode/
-emacs.d/vendor/git-emacs/
-emacs.d/vendor/haskell-mode/
-emacs.d/vendor/popup-el/
-emacs.d/vendor/Pymacs/
-emacs.d/vendor/python-mode/
-emacs.d/vendor/ropemacs/
-emacs.d/vendor/yaml-mode/
 
 mutt/cache/
 mutt/certificates
