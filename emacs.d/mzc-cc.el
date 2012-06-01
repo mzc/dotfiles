@@ -2,6 +2,10 @@
 ;(add-hook 'c-mode-common-hook 'google-set-c-style)
 ;(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
+(defun change-c-basic-offset (size)
+  (interactive "nNew indent size: ")
+  (setf c-basic-offset size))
+
 (defun c-lineup-arglist-tabs-only (ignored)
   "Line up argument lists by tabs, not spaces"
   (let* ((anchor (c-langelem-pos c-syntactic-element))
