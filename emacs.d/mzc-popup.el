@@ -1,2 +1,2 @@
 ;;; Load my local path
-(add-to-list 'load-path "~/.emacs.d/vendor/popup-el")
+(add-to-list 'load-path "~/.emacs.d/el-get/popup")

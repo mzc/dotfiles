@@ -1,5 +1,5 @@
 ;;; Load my local path
-(add-to-list 'load-path "~/.emacs.d/vendor/ecb")
+(add-to-list 'load-path "~/.emacs.d/el-get/ecb")
 
 (require 'ecb)
 
