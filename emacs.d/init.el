@@ -19,16 +19,24 @@
 ;; local sources
 (setq el-get-sources
       '(el-get
+	(:name session
+	       :after (lambda () (load-library "mzc-session")))
+	(:name color-theme
+	       :after (lambda () (load-library "mzc-color-theme")))
 	(:name ecb
 	       :after (lambda () (load-library "mzc-ecb")))
 	(:name popup)
 	(:name auto-complete
 	       :after (lambda () (load-library "mzc-auto-complete")))
+	(:name yasnippet
+	       :after (lambda () (load-library "mzc-yasnippet")))
 	(:name go-mode)
 	(:name python-mode
 	       :after (lambda () (load-library "mzc-python")))
 	(:name haskell-mode
 	       :after (lambda () (load-library "mzc-haskell")))
+	(:name lua-mode
+	       :after (lambda () (load-library "mzc-lua")))
 	(:name yaml-mode
 	       :after (lambda () (load-library "mzc-yaml")))
 	(:name magit
@@ -43,7 +51,6 @@
 
 (load-library "mzc-utilities")
 (load-library "mzc-misc")
-(load-library "mzc-session")
 (load-library "mzc-desktop")
 (load-library "mzc-ibuffer")
 (load-library "mzc-ido")
@@ -51,18 +58,15 @@
 (load-library "mzc-recentf")
 (load-library "mzc-tramp")
 (load-library "mzc-eshll")
-(load-library "mzc-color-theme")
 (load-library "mzc-highlight")
 (load-library "mzc-cscope")
 (load-library "mzc-cedet")
 ;(load-library "mzc-gtags")
 (load-library "mzc-evernote")
-(load-library "mzc-yasnippet")
 (load-library "mzc-speedbar")
 (load-library "mzc-gdb")
 (load-library "mzc-ssh")
 (load-library "mzc-flex")
-(load-library "mzc-lua")
 ;(load-library "mzc-puppet")
 (load-library "mzc-perl")
 (load-library "mzc-gccsense")
