@@ -64,7 +64,6 @@
 (load-library "mzc-flex")
 (load-library "mzc-lua")
 ;(load-library "mzc-puppet")
-(load-library "mzc-ipython")
 (load-library "mzc-perl")
 (load-library "mzc-gccsense")
 (load-library "mzc-c-eldoc")
