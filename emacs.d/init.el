@@ -19,21 +19,22 @@
 ;; local sources
 (setq el-get-sources
       '(el-get
-	(:name magit
-	       :after (lambda () (global-set-key (kbd "C-x C-z") 'magit-status)))
-	(:name magithub)
+	(:name ecb
+	       :after (lambda () (load-library "mzc-ecb")))
+	(:name popup
+	       :after (lambda () (load-library "mzc-popup")))
+	(:name auto-complete
+	       :after (lambda () (load-library "mzc-auto-complete")))
+	(:name go-mode)
 	(:name python-mode
 	       :after (lambda () (load-library "mzc-python")))
 	(:name haskell-mode
 	       :after (lambda () (load-library "mzc-haskell")))
-	(:name popup
-	       :after (lambda () (load-library "mzc-popup")))
 	(:name yaml-mode
 	       :after (lambda () (load-library "mzc-yaml")))
-	(:name auto-complete
-	       :after (lambda () (load-library "mzc-auto-complete")))
-	(:name ecb
-	       :after (lambda () (load-library "mzc-ecb")))
+	(:name magit
+	       :after (lambda () (global-set-key (kbd "C-x C-z") 'magit-status)))
+	(:name magithub)
 	))
 
 (setq my-packages
@@ -66,7 +67,6 @@
 ;(load-library "mzc-puppet")
 (load-library "mzc-ipython")
 (load-library "mzc-perl")
-(load-library "mzc-go")
 (load-library "mzc-gccsense")
 (load-library "mzc-c-eldoc")
 (load-library "mzc-cflow")
