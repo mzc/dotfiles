@@ -34,8 +34,6 @@
 	       :after (load-library "mzc-yaml"))
 	(:name auto-complete
 	       :after (load-library "mzc-auto-complete"))
-	(:name cedet
-	       :after (load-library "mzc-cedet"))
 	(:name ecb
 	       :after (load-library "mzc-ecb"))
 	))
@@ -109,6 +107,11 @@
 ;;; Cscope
 ;;;---------------------------------------------------------------
 (load-library "mzc-cscope")
+
+;;;---------------------------------------------------------------
+;;; Cedet
+;;;---------------------------------------------------------------
+(load-library "mzc-cedet")
 
 ;;;---------------------------------------------------------------
 ;;; Gtags
