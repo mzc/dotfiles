@@ -22,20 +22,18 @@
 	(:name magit
 	       :after (lambda () (global-set-key (kbd "C-x C-z") 'magit-status)))
 	(:name magithub)
-	(:name pymacs)
-	(:name ropemacs)
 	(:name python-mode
-	       :after (load-library "mzc-python"))
+	       :after (lambda () (load-library "mzc-python")))
 	(:name haskell-mode
-	       :after (load-library "mzc-haskell"))
+	       :after (lambda () (load-library "mzc-haskell")))
 	(:name popup
-	       :after (load-library "mzc-popup"))
+	       :after (lambda () (load-library "mzc-popup")))
 	(:name yaml-mode
-	       :after (load-library "mzc-yaml"))
+	       :after (lambda () (load-library "mzc-yaml")))
 	(:name auto-complete
-	       :after (load-library "mzc-auto-complete"))
+	       :after (lambda () (load-library "mzc-auto-complete")))
 	(:name ecb
-	       :after (load-library "mzc-ecb"))
+	       :after (lambda () (load-library "mzc-ecb")))
 	))
 
 (setq my-packages
