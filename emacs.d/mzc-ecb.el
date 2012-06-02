@@ -1,6 +1,3 @@
-;;; Load my local path
-(add-to-list 'load-path "~/.emacs.d/el-get/ecb")
-
 (require 'ecb)
 
 (setq ecb-tip-of-the-day nil)

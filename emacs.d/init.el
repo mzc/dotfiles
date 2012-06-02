@@ -21,8 +21,7 @@
       '(el-get
 	(:name ecb
 	       :after (lambda () (load-library "mzc-ecb")))
-	(:name popup
-	       :after (lambda () (load-library "mzc-popup")))
+	(:name popup)
 	(:name auto-complete
 	       :after (lambda () (load-library "mzc-auto-complete")))
 	(:name go-mode)
