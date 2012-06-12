@@ -61,11 +61,11 @@
 			    (width . 128) (height . 68)))
 
 ;; Disable scroll-bar
-(scroll-bar-mode nil)
+(scroll-bar-mode -1)
 
 ;; Disable menu-bar
-(menu-bar-mode nil)
+(menu-bar-mode -1)
 
 ;; Disable tool-bar
-(tool-bar-mode nil)
+(tool-bar-mode -1)
 
