@@ -13,4 +13,6 @@ do
     sleep 15m
 done &
 
+keynav &
+
 exec xmonad
