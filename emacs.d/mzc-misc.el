@@ -53,9 +53,6 @@
 ;(line-number-mode)
 (column-number-mode)
 
-;; fonts
-(set-face-attribute 'default nil :height 103)
-
 ;; frame size
 (setq initial-frame-alist '((top . 40) (left . 0)
 			    (width . 128) (height . 68)))
@@ -69,3 +66,20 @@
 ;; Disable tool-bar
 (tool-bar-mode -1)
 
+;Set font for emacsclient
+(defun frame-setting ()
+  (interactive)
+  ;; Setting English Font
+  (set-face-attribute 'default nil :font "DejaVu Sans Mono-11")
+  ;; Chinese Font
+  (dolist (charset '(kana han symbol cjk-misc bopomofo))
+    (set-fontset-font (frame-parameter nil 'font)
+                      charset
+                      (font-spec :family "文泉驿等宽微米黑" :size 16))))
+
+(if (and (fboundp 'daemonp) (daemonp))
+    (add-hook 'after-make-frame-functions
+	      (lambda (frame)
+		(with-selected-frame frame
+		  (frame-setting))))
+  (frame-setting))
