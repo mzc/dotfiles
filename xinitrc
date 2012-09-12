@@ -1,6 +1,6 @@
 # Change the keyboard keys
-if [ -f "/home/mzc/.xmodmap" ]; then
-    /usr/bin/xmodmap "/home/mzc/.xmodmap" 2>/dev/null
+if [ -f "$HOME/.xmodmap" ]; then
+    /usr/bin/xmodmap "$HOME/.xmodmap" 2>/dev/null
 fi
 
 ibus-daemon -x -r -d
