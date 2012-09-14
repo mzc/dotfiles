@@ -1,0 +1,24 @@
+[general]
+accounts = gmail
+machineui = Curses.Blinkenlights # Gives you a nice blinky output on the console so you know what's happening.
+
+[Account gmail]
+localrepository = gmail-local
+remoterepository = gmail-maxzch
+#autorefresh = 5 # fetches your mails every 5 Minutes
+
+[Repository gmail-local]
+type = Maildir
+localfolders = ~/mails/gmail
+
+[Repository gmail-maxzch]
+type = Gmail
+remoteuser = maxzch@gmail.com
+#remotepass = password
+nametrans = lambda foldername: re.sub ('^\[gmail\]', 'bak',
+                               re.sub ('sent_mail', 'sent',
+                               re.sub ('starred', 'flagged',
+                               re.sub (' ', '_', foldername.lower()))))
+folderfilter = lambda foldername: foldername not in '[Gmail]/All Mail'
+# Necessary as of OfflineIMAP 6.5.4
+cert_fingerprint=f3043dd689a2e7dddfbef82703a6c65ea9b634c1
