@@ -22,3 +22,4 @@ mutt/mail.imap
 
 *~
 *.elc
+*.pyc
