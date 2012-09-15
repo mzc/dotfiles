@@ -18,7 +18,6 @@ emacs.d/vendor/emacs-evernote-mode/
 
 mutt/cache/
 mutt/certificates
-mutt/mail.imap
 
 *~
 *.elc
