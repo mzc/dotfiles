@@ -15,12 +15,9 @@ localfolders = ~/mails/gmail
 type = Gmail
 remoteuser       = maxzch@gmail.com
 remotepasseval   = keyring.get_password("offlineimap", "maxzch@gmail.com")
-nametrans        = lambda foldername: re.sub ('^\[gmail\]', 'gmail',
-                                      re.sub ('sent_mail', 'sent',
-                                      re.sub (' ', '_', foldername.lower())))
 folderfilter     = lambda foldername: foldername not in '[Gmail]/All Mail'
 realdelete       = no
-# maxconnections = 3
+maxconnections = 3
 
 # Necessary as of OfflineIMAP 6.5.4
 cert_fingerprint=f3043dd689a2e7dddfbef82703a6c65ea9b634c1
