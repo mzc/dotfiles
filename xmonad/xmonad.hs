@@ -6,6 +6,8 @@ import XMonad.Hooks.DynamicLog
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
+import XMonad.Actions.CycleWS
+
 import XMonad.Layout.PerWorkspace (onWorkspace, onWorkspaces)
 import XMonad.Layout.NoBorders
 import XMonad.Layout.Tabbed
@@ -125,6 +127,16 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
     , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
     ]
+    
+    ++
+     
+    -- Switch between Screens
+    [ ((modm,                xK_p), prevScreen)
+    , ((modm,                xK_n), nextScreen)
+    , ((modm .|. shiftMask,  xK_p), shiftPrevScreen)
+    , ((modm .|. shiftMask,  xK_n), shiftNextScreen)
+    , ((modm,                xK_s), swapNextScreen)]
+    
     ++
 
     [((m .|. modm, k), windows $ f i)
