@@ -4,8 +4,8 @@ Config { font = "xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true:b
        , position = Top
        , lowerOnStart = True
        , commands = [ Run StdinReader
-                    , Run Network "wlan0" ["-t", "W:<rx>KB-<tx>KB", "-L","0","-H","100","--normal","#A6E22E","--high","#FF669D"] 10
-                    , Run Network "eth0" ["-t", "E:<rx>KB-<tx>KB", "-L","0","-H","100","--normal","#A6E22E","--high","#FF669D"] 10
+                    , Run Network "wlan0" ["-t", "W:<rx>K-<tx>K", "-L","0","-H","100","--normal","#A6E22E","--high","#FF669D"] 10
+                    , Run Network "eth0" ["-t", "E:<rx>K-<tx>K", "-L","0","-H","100","--normal","#A6E22E","--high","#FF669D"] 10
                     , Run Cpu ["-t", "C:<total>%", "-L","3","-H","51","--normal","#A6E22E","--high","#FF669D"] 10
                     , Run Memory ["-t","M:<usedratio>%"] 10
                     , Run Date "%a %d/%m/%y %H:%M" "date" 10
