@@ -56,7 +56,7 @@ myConfig = defaultConfig
      }
            
 myModMask            = mod4Mask
-myWorkspaces         = ["1:term","2:emacs","3:email","4:www","5:ebook","6:app","7:im", "8:game"]
+myWorkspaces         = ["1:term","2:emacs","3:email","4:www","5:ebook","6:app","7:im", "8:virt", "9:dual"]
 myTerminal           = "urxvt"
 myNormalBorderColor  = "grey"
 myFocusedBorderColor = "yellow"
