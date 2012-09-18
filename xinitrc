@@ -13,6 +13,12 @@ do
     sleep 15m
 done &
 
+while true
+do
+    mailrun
+    sleep 5m
+done &
+
 keynav &
 
 exec xmonad
