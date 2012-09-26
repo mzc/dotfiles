@@ -9,45 +9,46 @@
 (add-to-list 'load-path "/etc")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
-(unless 
-    (require 'el-get nil t)
-  (url-retrieve "https://raw.github.com/dimitri/el-get/master/el-get-install.el"
-		(lambda (s) 
-		  (goto-char (point-max))
-		  (eval-print-last-sexp))))
+(unless (require 'el-get nil t)
+  (url-retrieve
+   "https://raw.github.com/dimitri/el-get/master/el-get-install.el"
+   (lambda (s)
+     (let (el-get-master-branch)
+       (goto-char (point-max))
+       (eval-print-last-sexp)))))
 
 ;; local sources
 (setq el-get-sources
       '(el-get
 	(:name tabbar
-	       :after (lambda () (load-library "mzc-tabbar")))
-	(:name session
-	       :after (lambda () (load-library "mzc-session")))
+	       :after (progn (load-library "mzc-tabbar")))
+;	(:name session
+;	       :after (progn (load-library "mzc-session")))
 	(:name color-theme
-	       :after (lambda () (load-library "mzc-color-theme")))
-	(:name ecb
-	       :after (lambda () (load-library "mzc-ecb")))
-	(:name popup)
-	(:name auto-complete
-	       :after (lambda () (load-library "mzc-auto-complete")))
+ 	       :after (progn (load-library "mzc-color-theme")))
+ 	(:name ecb
+ 	       :after (progn (load-library "mzc-ecb")))
+ 	(:name popup)
+ 	(:name auto-complete
+ 	       :after (progn (load-library "mzc-auto-complete")))
 	(:name yasnippet
-	       :after (lambda () (load-library "mzc-yasnippet")))
-	(:name xcscope
-	       :after (lambda () (load-library "mzc-cscope")))
-	(:name go-mode)
-	(:name python-mode
-	       :after (lambda () (load-library "mzc-python")))
-	(:name haskell-mode
-	       :after (lambda () (load-library "mzc-haskell")))
-	(:name lua-mode
-	       :after (lambda () (load-library "mzc-lua")))
-;	(:name puppet-mode
-;	       :after (lambda () (load-library "mzc-puppet")))
+	       :after (progn (load-library "mzc-yasnippet")))
+ 	(:name xcscope
+ 	       :after (progn (load-library "mzc-cscope")))
+ 	(:name go-mode)
+ 	(:name python-mode
+ 	       :after (progn (load-library "mzc-python")))
+ 	(:name haskell-mode
+ 	       :after (progn (load-library "mzc-haskell")))
+ 	(:name lua-mode
+ 	       :after (progn (load-library "mzc-lua")))
+	(:name puppet-mode
+	       :after (progn (load-library "mzc-puppet")))
 	(:name yaml-mode
-	       :after (lambda () (load-library "mzc-yaml")))
-	(:name magit
-	       :after (lambda () (global-set-key (kbd "C-x C-z") 'magit-status)))
-	(:name magithub)
+	       :after (progn (load-library "mzc-yaml")))
+ 	(:name magit
+ 	       :after (progn (global-set-key (kbd "C-x C-z") 'magit-status)))
+ 	(:name magithub)
 	))
 
 (setq my-packages
