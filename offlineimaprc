@@ -1,4 +1,5 @@
 [general]
+fsync      = False
 pythonfile = ~/dotfiles/offlineimap.py
 accounts   = gmail
 
@@ -17,7 +18,7 @@ remoteuser       = maxzch@gmail.com
 remotepasseval   = keyring.get_password("offlineimap", "maxzch@gmail.com")
 folderfilter     = lambda foldername: foldername not in '[Gmail]/All Mail'
 realdelete       = no
-maxconnections = 3
+maxconnections   = 3
 
 # Necessary as of OfflineIMAP 6.5.4
 cert_fingerprint=f3043dd689a2e7dddfbef82703a6c65ea9b634c1
