@@ -66,7 +66,7 @@
 (load-library "mzc-eshll")
 (load-library "mzc-highlight")
 (load-library "mzc-ediff")
-(load-library "mzc-evernote")
+;(load-library "mzc-evernote")
 ;(load-library "mzc-gtags")
 (load-library "mzc-cedet")
 (load-library "mzc-speedbar")
