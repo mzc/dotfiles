@@ -5,7 +5,7 @@ set alias_file = ~/.mutt/aliases
 source ~/.mutt/aliases
 source ~/.mutt/hooks
 
-set editor        = "emacs -Q -nw"
+set editor        = "emacsclient -c -a \"\""
 set print_command = "a2ps -g -Email -d -1 -M letter -R"
 
 # main options
