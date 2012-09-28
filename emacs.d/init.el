@@ -80,6 +80,7 @@
 (load-library "mzc-cflow")
 (load-library "mzc-cc")
 (load-library "mzc-octave")
+(load-library "mzc-org")
 
 ;;;---------------------------------------------------------------
 ;;; Custom set

@@ -14,6 +14,7 @@ emacs.d/abbrev_defs
 emacs.d/ac-comphist.dat
 emacs.d/auto-save-list/
 emacs.d/ede-projects.el
+emacs.d/bookmarks
 emacs.d/vendor/emacs-evernote-mode/
 
 mutt/cache/
