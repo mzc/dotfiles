@@ -87,16 +87,16 @@
 ;;; Use ecb-store-window-sizes to save the layout
 ;;;---------------------------------------------------------------
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ecb-layout-window-sizes (quote (("mzc" (ecb-methods-buffer-name 0.19230769230769232 . 0.9821428571428571) (ecb-analyse-buffer-name 0.1875 . 0.48214285714285715) (ecb-history-buffer-name 0.1875 . 0.5)))))
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-layout-window-sizes (quote (("mzc" (ecb-methods-buffer-name 0.21800947867298578 . 0.9824561403508771) (ecb-sources-buffer-name 0.22274881516587677 . 0.9824561403508771)))))
  '(safe-local-variable-values (quote ((c-indentation-style . bsd)))))
 				   
 (custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
