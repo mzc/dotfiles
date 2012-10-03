@@ -63,7 +63,7 @@
 (load-library "mzc-ido")
 (load-library "mzc-recentf")
 (load-library "mzc-tramp")
-(load-library "mzc-eshll")
+(load-library "mzc-eshell")
 (load-library "mzc-highlight")
 (load-library "mzc-ediff")
 ;(load-library "mzc-evernote")
