@@ -1,6 +1,6 @@
 text/html;              w3m -dump %s; copiousoutput; nametemplate=%s.html
 image/*;                feh %s &; copiousoutput
-application/pdf;        apvlv %s; copiousoutput
+application/pdf;        llpp %s; copiousoutput
 application/x-gunzip;   gzcat; copiousoutput
 application/x-tar-gz;   gunzip -c %s | tar -tf - ; copiousoutput
 application/postscript; ps2ascii %s; copiousoutput
