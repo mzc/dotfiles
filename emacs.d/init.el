@@ -49,6 +49,8 @@
  	(:name magit
  	       :after (progn (global-set-key (kbd "C-x C-z") 'magit-status)))
  	(:name magithub)
+	(:name quack
+	       :after (progn (load-library "mzc-scheme")))
 	))
 
 (setq my-packages
