@@ -73,6 +73,7 @@
 (load-library "mzc-gdb")
 (load-library "mzc-ssh")
 (load-library "mzc-flex")
+(load-library "mzc-go")
 (load-library "mzc-puppet")
 (load-library "mzc-perl")
 ;(load-library "mzc-gccsense")
