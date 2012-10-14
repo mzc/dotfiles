@@ -3,7 +3,7 @@
 ;; for org-member
 (org-remember-insinuate)
 (setq org-default-notes-file (concat org-directory "todo/1.idea.org"))
-(global-set-key (kbd "\C-cor") 'org-remember)
+(global-set-key (kbd "C-c o r") 'org-remember)
 
 ;; for todo
 (setq todo-path "~/Dropbox/org/todo")
@@ -28,4 +28,4 @@
 	  (copy-file (format "%s/3.proj.org" todo-path) gtd-path nil))
 	(find-file gtd-path)))))
 
-(global-set-key (kbd "\C-cog") 'do-gtd)
+(global-set-key (kbd "C-c o g") 'do-gtd)
