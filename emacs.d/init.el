@@ -50,11 +50,16 @@
  	       :after (progn (global-set-key (kbd "C-x C-z") 'magit-status)))
  	(:name magithub)
 
+	;; Lisp
+	(:name paredit
+	       :after (progn (load-library "mzc-paredit")))
+
 	;; Scheme mode
 	(:name geiser)
-	(:name paredit
-	       :after (progn (load-library "mzc-scheme")))
-	))
+
+	;; Clojure
+	(:name clojure-mode)
+	(:name nrepl)))
 
 (setq my-packages
       (append '(el-get)
