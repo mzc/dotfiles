@@ -3,7 +3,7 @@ if [ -f "$HOME/.xmodmap" ]; then
 fi
 
 # Arch's ibus conflicts with xmodmap, using scim instead
-grep -q ARCH /proc/version
+lsb_release --id | grep arch
 if [ $? -eq 0 ]; then
     export XMODIFIERS=@im=SCIM
     export GTK_IM_MODULE="scim"
