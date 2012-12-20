@@ -1,7 +1,0 @@
-#!/bin/bash
-
-if [ `pgrep offlineimap | wc -l` -le 0 ]; then
-    offlineimap -u quiet
-fi
-
-exit 0
