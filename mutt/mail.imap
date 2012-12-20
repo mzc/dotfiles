@@ -1,0 +1,11 @@
+# options
+set spoolfile = "imaps://imap.gmail.com:993/INBOX"
+
+set imap_user = "maxzch@gmail.com"
+
+set folder = "imaps://imap.gmail.com:993"
+set postponed = "imaps://imap.gmail.com/[Gmail]/Drafts"
+set record = ""
+set imap_check_subscribed = "yes"
+set imap_list_subscribed = "yes"
+set mbox = "imaps://imap.gmail.com/[Gmail]/All Mail"
