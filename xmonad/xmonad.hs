@@ -98,10 +98,13 @@ myLayoutHook = onWorkspace "2:emacs" emacsLayout
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
  
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
-    , ((modm,               xK_p     ), spawn "exe=`dmenu_path | dmenu` && eval \"exec $exe\"")
-    , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
+    , ((modm,               xK_d     ), spawn "exe=`dmenu_path | dmenu` && eval \"exec $exe\"")
+    , ((modm .|. shiftMask, xK_d     ), spawn "gmrun")
     , ((modm .|. shiftMask, xK_c     ), kill)
-    , ((modm,               xK_space ), sendMessage NextLayout)]
+    , ((modm,               xK_space ), sendMessage NextLayout)
+    , ((modm,               xK_t     ), spawn "synclient TouchpadOff=0")
+    , ((modm .|. shiftMask, xK_t     ), spawn "synclient TouchpadOff=1
+")]
 
     ++
 
@@ -121,7 +124,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     
     , ((modm,               xK_m     ), windows W.focusMaster)
     , ((modm,               xK_Return), windows W.swapMaster)
-    , ((modm,               xK_t     ), withFocused $ windows . W.sink)]
+    , ((modm,               xK_f     ), withFocused $ windows . W.sink)]
 
 
     ++
