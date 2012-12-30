@@ -103,8 +103,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_c     ), kill)
     , ((modm,               xK_space ), sendMessage NextLayout)
     , ((modm,               xK_t     ), spawn "synclient TouchpadOff=0")
-    , ((modm .|. shiftMask, xK_t     ), spawn "synclient TouchpadOff=1
-")]
+    , ((modm .|. shiftMask, xK_t     ), spawn "synclient TouchpadOff=1")]
 
     ++
 
