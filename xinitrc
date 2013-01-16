@@ -15,6 +15,7 @@ fi
 
 unclutter &
 keynav &
+synclient TouchpadOff=1
 
 while true
 do
