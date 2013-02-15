@@ -35,8 +35,6 @@
 	       :after (progn (load-library "mzc-yasnippet")))
  	(:name xcscope
  	       :after (progn (load-library "mzc-cscope")))
- 	(:name go-mode
-	       :after (progn (load-library "mzc-go")))
  	(:name python-mode
  	       :after (progn (load-library "mzc-python")))
  	(:name haskell-mode
@@ -84,6 +82,7 @@
 (load-library "mzc-gdb")
 (load-library "mzc-ssh")
 (load-library "mzc-flex")
+(load-library "mzc-go")
 (load-library "mzc-puppet")
 (load-library "mzc-perl")
 ;(load-library "mzc-gccsense")
