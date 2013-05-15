@@ -166,9 +166,5 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     
     -- Application
     [ ((modm .|. controlMask, xK_e), spawn "emacsclient -c -a \"\"")
-    , ((modm .|. controlMask, xK_w), spawn "chromium")
-    , ((modm .|. controlMask, xK_p), spawn "apvlv")
-    , ((modm .|. controlMask, xK_m), spawn "evolution")
-    , ((modm .|. controlMask, xK_u), spawn "muliclient-x2go")
-    , ((modm .|. controlMask, xK_i), spawn "urxvt -e freetalk")]
+    , ((modm .|. controlMask, xK_w), spawn "google-chrome")]
 
