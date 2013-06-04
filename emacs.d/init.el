@@ -58,7 +58,11 @@
 
 	;; Clojure
 	(:name clojure-mode)
-	(:name nrepl)))
+	(:name nrepl)
+
+	;; Basic
+	(:name basic
+	       :after (progn (load-library "mzc-basic")))))
 
 (setq my-packages
       (append '(el-get)
