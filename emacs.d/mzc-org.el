@@ -1,6 +1,7 @@
 (setq org-directory "~/Dropbox/org/")
 
 ;; for org-member
+(require 'org-remember)
 (org-remember-insinuate)
 (setq org-default-notes-file (concat org-directory "todo/1.idea.org"))
 (global-set-key (kbd "C-c o r") 'org-remember)
