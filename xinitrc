@@ -1,3 +1,7 @@
+if [ -f "$HOME/.bash_profile" ]; then
+    . "$HOME/.bash_profile"
+fi
+
 if [ -f "$HOME/.xmodmap" ]; then
     /usr/bin/xmodmap "$HOME/.xmodmap" 2>/dev/null
 fi
