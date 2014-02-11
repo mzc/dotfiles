@@ -9,3 +9,6 @@ alias l.='ls -d'
 alias l='ls -CF'
 
 alias ec='emacsclient -c -a ""'
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
