@@ -14,7 +14,6 @@
 (load-library "my-c-eldoc")
 (load-library "my-cc")
 (load-library "my-cedet")
-(load-library "my-cflow")
 (load-library "my-color-theme")
 (load-library "my-desktop")
 (load-library "my-ecb")
