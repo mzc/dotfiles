@@ -45,7 +45,6 @@
 (load-library "my-xcscope")
 (load-library "my-yaml")
 
-;(load-library "my-basic")
 ;(load-library "my-evernote")
 ;(load-library "my-gtags")
 ;(load-library "my-gccsense")
