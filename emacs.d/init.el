@@ -44,7 +44,6 @@
 (load-library "my-xcscope")
 (load-library "my-yaml")
 
-;(load-library "my-gtags")
 ;(load-library "my-gccsense")
 ;(load-library "my-python")
 ;(load-library "my-yasnippet")
