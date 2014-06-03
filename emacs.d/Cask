@@ -7,6 +7,7 @@
 (depends-on "ecb")
 (depends-on "geiser")
 (depends-on "haskell-mode")
+(depends-on "highlight-symbol")
 (depends-on "lua-mode")
 (depends-on "magit")
 (depends-on "multi-eshell")
