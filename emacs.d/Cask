@@ -7,6 +7,7 @@
 (depends-on "color-theme")
 (depends-on "ecb")
 (depends-on "geiser")
+(depends-on "go-mode")
 (depends-on "google-c-style")
 (depends-on "haskell-mode")
 (depends-on "highlight-symbol")

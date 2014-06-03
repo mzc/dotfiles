@@ -1,4 +1,3 @@
-(add-to-list 'load-path "~/repo/go/misc/emacs" t)
 (require 'go-mode-load)
 
 (add-hook 'before-save-hook 'gofmt-before-save)
