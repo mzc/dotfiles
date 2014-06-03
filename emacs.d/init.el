@@ -37,7 +37,6 @@
 (load-library "my-recentf")
 (load-library "my-session")
 (load-library "my-speedbar")
-(load-library "my-ssh")
 (load-library "my-tabbar")
 (load-library "my-tramp")
 (load-library "my-utilities")
