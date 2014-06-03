@@ -45,7 +45,6 @@
 (load-library "my-yaml")
 
 ;(load-library "my-gccsense")
-;(load-library "my-python")
 ;(load-library "my-yasnippet")
 
 ;;;---------------------------------------------------------------
