@@ -2,6 +2,7 @@
 (source melpa)
 
 (depends-on "auto-complete")
+(depends-on "c-eldoc")
 (depends-on "clojure-mode")
 (depends-on "color-theme")
 (depends-on "ecb")
