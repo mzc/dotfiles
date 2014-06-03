@@ -10,7 +10,6 @@
 (depends-on "highlight-symbol")
 (depends-on "lua-mode")
 (depends-on "magit")
-(depends-on "multi-eshell")
 (depends-on "pallet")
 (depends-on "paredit")
 (depends-on "popup")
