@@ -23,7 +23,6 @@
 (require 'go-flycheck)
 
 ;;; Autocompletion
-(add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/nsf/gocode/emacs"))
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 

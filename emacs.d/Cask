@@ -8,6 +8,7 @@
 (depends-on "ecb")
 (depends-on "flycheck")
 (depends-on "geiser")
+(depends-on "go-autocomplete")
 (depends-on "go-eldoc")
 (depends-on "go-mode")
 (depends-on "go-snippets")
