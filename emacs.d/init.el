@@ -43,9 +43,9 @@
 (load-library "my-utilities")
 (load-library "my-xcscope")
 (load-library "my-yaml")
+(load-library "my-yasnippet")
 
 ;(load-library "my-gccsense")
-;(load-library "my-yasnippet")
 
 ;;;---------------------------------------------------------------
 ;;; Custom set
