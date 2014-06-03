@@ -2,7 +2,6 @@
 ;;; Load my local path
 ;;;---------------------------------------------------------------
 (add-to-list 'load-path "~/.emacs.d")
-(add-to-list 'load-path "~/.emacs.d/vendor")
 
 ;;;---------------------------------------------------------------
 ;;; Cask and Pallet
