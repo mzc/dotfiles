@@ -21,7 +21,6 @@
 (load-library "my-ecb")
 (load-library "my-ediff")
 (load-library "my-eshell")
-(load-library "my-flex")
 (load-library "my-gdb")
 (load-library "my-go")
 (load-library "my-haskell")
