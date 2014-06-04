@@ -36,7 +36,6 @@
 (load-library "my-session")
 (load-library "my-sr-speedbar")
 (load-library "my-tabbar")
-(load-library "my-tramp")
 (load-library "my-utilities")
 (load-library "my-xcscope")
 (load-library "my-yaml")
