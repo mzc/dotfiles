@@ -53,7 +53,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ecb-layout-window-sizes (quote (("mzc" (ecb-methods-buffer-name 0.15 . 0.9824561403508771) (ecb-analyse-buffer-name 0.14 . 0.49122807017543857) (ecb-speedbar-buffer-name 0.13 . 0.49122807017543857)))))
+ '(ecb-layout-window-sizes (quote (("left9" (ecb-methods-buffer-name 0.18 . 0.9824561403508771)))))
  '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
