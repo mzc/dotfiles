@@ -34,7 +34,7 @@
 (load-library "my-puppet")
 (load-library "my-recentf")
 (load-library "my-session")
-(load-library "my-speedbar")
+(load-library "my-sr-speedbar")
 (load-library "my-tabbar")
 (load-library "my-tramp")
 (load-library "my-utilities")

@@ -22,6 +22,7 @@
 (depends-on "popup")
 (depends-on "puppet-mode")
 (depends-on "session")
+(depends-on "sr-speedbar")
 (depends-on "tabbar")
 (depends-on "xcscope")
 (depends-on "yaml-mode")
