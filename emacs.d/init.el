@@ -34,6 +34,7 @@
 (load-library "my-puppet")
 (load-library "my-recentf")
 (load-library "my-session")
+(load-library "my-systemtap")
 (load-library "my-sr-speedbar")
 (load-library "my-tabbar")
 (load-library "my-utilities")
