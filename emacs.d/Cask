@@ -5,6 +5,7 @@
 (depends-on "c-eldoc")
 (depends-on "clojure-mode")
 (depends-on "color-theme")
+(depends-on "dockerfile-mode")
 (depends-on "ecb")
 (depends-on "flycheck")
 (depends-on "geiser")

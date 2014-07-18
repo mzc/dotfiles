@@ -16,6 +16,7 @@
 (load-library "my-cedet")
 (load-library "my-color-theme")
 (load-library "my-desktop")
+(load-library "my-dockerfile")
 (load-library "my-ecb")
 (load-library "my-ediff")
 (load-library "my-eshell")
