@@ -6,6 +6,8 @@
 ;; Deletes other window before showing up
 (setq sr-speedbar-delete-windows t)
 
+(setq sr-speedbar-auto-refresh t)
+
 (global-set-key [f10] (lambda ()
 			(interactive)
 			(sr-speedbar-toggle)
