@@ -1,3 +1,6 @@
+;; Disable use-file-dialog
+(setq use-file-dialog nil)
+
 ;; Set default major mode
 (setq default-major-mode 'text-mode)
 
