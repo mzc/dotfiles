@@ -1,4 +1,4 @@
-(require 'go-mode-load)
+(require 'go-mode-autoloads)
 
 ;;; Invoke gofmt before save
 (add-hook 'before-save-hook 'gofmt-before-save)
