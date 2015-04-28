@@ -28,6 +28,7 @@
 (load-library "my-ido")
 (load-library "my-lua")
 (load-library "my-misc")
+(load-library "my-nginx")
 (load-library "my-octave")
 (load-library "my-org")
 (load-library "my-paredit")
