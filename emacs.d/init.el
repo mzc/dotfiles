@@ -1,6 +1,13 @@
 ;;;---------------------------------------------------------------
 ;;; Load my local path
 ;;;---------------------------------------------------------------
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 ;;;---------------------------------------------------------------
@@ -28,6 +35,7 @@
 (load-library "my-ido")
 (load-library "my-lua")
 (load-library "my-misc")
+(load-library "my-mql")
 (load-library "my-nginx")
 (load-library "my-octave")
 (load-library "my-org")
@@ -55,7 +63,14 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ecb-layout-window-sizes (quote (("left9" (ecb-methods-buffer-name 0.18 . 0.9824561403508771)))))
+ '(ecb-layout-window-sizes
+   (quote
+    (("left9"
+      (ecb-methods-buffer-name 0.18 . 0.9824561403508771)))))
+ '(package-selected-packages
+   (quote
+    (yasnippet yaml-mode xcscope tabbar systemtap-mode sr-speedbar session puppet-mode paredit pallet nginx-mode magit lua-mode highlight-symbol haskell-mode google-c-style go-snippets go-eldoc go-autocomplete geiser flycheck ecb dockerfile-mode color-theme clojure-mode c-eldoc)))
+ '(safe-local-variable-values (quote ((c-indent-level . 8))))
  '(session-use-package t nil (session)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
