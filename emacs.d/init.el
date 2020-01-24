@@ -38,7 +38,7 @@
 (load-library "my-mql")
 (load-library "my-nginx")
 (load-library "my-octave")
-(load-library "my-org")
+;(load-library "my-org")
 (load-library "my-paredit")
 (load-library "my-perl")
 (load-library "my-puppet")
