@@ -2,5 +2,5 @@
 
 for l in Xdefaults bash_aliases emacs.d eshell mailcap urlview xinitrc xmobarrc xmonad mutt global_gitignore inputrc
 do
-    ln -snf dotfiles/$l ../.$l
+    ln -snf dotfiles/$l ${HOME}/.$l
 done
