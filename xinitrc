@@ -3,11 +3,11 @@ if [ -f "$HOME/.bash_profile" ]; then
 fi
 
 export LC_CTYPE="en_US.UTF-8"
-export XMODIFIERS=@im=ibus
-export GTK_IM_MODULE=ibus
-export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=fcitx
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
 
-ibus-daemon -xrd
+fcitx &
 
 setxkbmap -option ctrl:swapcaps &
 unclutter &
