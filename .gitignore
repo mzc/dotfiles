@@ -8,6 +8,8 @@ eshell/lastdir
 eshell/history
 
 emacs.d/.cask/
+emacs.d/.emacs.desktop
+emacs.d/.emacs.desktop.lock
 emacs.d/.org-id-locations
 emacs.d/.session
 emacs.d/abbrev_defs
@@ -15,6 +17,8 @@ emacs.d/ac-comphist.dat
 emacs.d/auto-save-list/
 emacs.d/bookmarks
 emacs.d/ede-projects.el
+emacs.d/elpa/
+emacs.d/recentf
 emacs.d/semanticdb
 emacs.d/srecode-map.el
 
