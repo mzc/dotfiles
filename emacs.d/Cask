@@ -5,7 +5,7 @@
 (depends-on "c-eldoc")
 (depends-on "cask")
 (depends-on "clojure-mode")
-(depends-on "color-theme")
+(depends-on "color-theme-modern")
 (depends-on "dash")
 (depends-on "dockerfile-mode")
 (depends-on "ecb")

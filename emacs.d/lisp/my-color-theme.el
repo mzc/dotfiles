@@ -1,3 +1,3 @@
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-subtle-hacker)
+(require 'color-theme-modern)
+(load-theme 'subtle-hacker t t)
+(enable-theme 'subtle-hacker)
