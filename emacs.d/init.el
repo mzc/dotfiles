@@ -43,6 +43,7 @@
 (load-library "my-perl")
 (load-library "my-puppet")
 (load-library "my-recentf")
+(load-library "my-rust")
 (load-library "my-session")
 (load-library "my-systemtap")
 (load-library "my-sr-speedbar")
@@ -69,7 +70,7 @@
       (ecb-methods-buffer-name 0.18 . 0.9824561403508771)))))
  '(package-selected-packages
    (quote
-    (yasnippet yaml-mode xcscope tabbar systemtap-mode sr-speedbar session puppet-mode paredit pallet nginx-mode magit lua-mode highlight-symbol haskell-mode google-c-style go-snippets go-eldoc go-autocomplete geiser flycheck ecb dockerfile-mode color-theme clojure-mode c-eldoc)))
+    (rustic yasnippet yaml-mode xcscope tabbar systemtap-mode sr-speedbar session puppet-mode paredit pallet nginx-mode magit lua-mode highlight-symbol haskell-mode google-c-style go-snippets go-eldoc go-autocomplete geiser flycheck ecb dockerfile-mode clojure-mode c-eldoc)))
  '(safe-local-variable-values (quote ((c-indent-level . 8))))
  '(session-use-package t nil (session)))
 (custom-set-faces

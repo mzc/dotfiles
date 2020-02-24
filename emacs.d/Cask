@@ -31,6 +31,7 @@
 (depends-on "paredit")
 (depends-on "popup")
 (depends-on "puppet-mode")
+(depends-on "rustic")
 (depends-on "s")
 (depends-on "session")
 (depends-on "shut-up")
