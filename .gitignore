@@ -18,6 +18,7 @@ emacs.d/auto-save-list/
 emacs.d/bookmarks
 emacs.d/ede-projects.el
 emacs.d/elpa/
+emacs.d/ido.last
 emacs.d/recentf
 emacs.d/semanticdb
 emacs.d/srecode-map.el
