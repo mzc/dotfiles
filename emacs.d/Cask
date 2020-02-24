@@ -12,6 +12,7 @@
 (depends-on "epl")
 (depends-on "f")
 (depends-on "flycheck")
+(depends-on "flymake-go")
 (depends-on "geiser")
 (depends-on "git-commit-mode")
 (depends-on "git-rebase-mode")

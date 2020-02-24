@@ -18,9 +18,7 @@
 			  (local-set-key (kbd \"M-.\") 'godef-jump)))
 
 ;;; Syntax checking
-(add-to-list 'load-path (concat (getenv "GOPATH") "/src/github.com/dougm/goflymake"))
-(require 'go-flymake)
-(require 'go-flycheck)
+(require 'flymake-go)
 
 ;;; Autocompletion
 (require 'go-autocomplete)
