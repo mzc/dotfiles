@@ -14,8 +14,6 @@
 (depends-on "flycheck")
 (depends-on "flymake-go")
 (depends-on "geiser")
-(depends-on "git-commit-mode")
-(depends-on "git-rebase-mode")
 (depends-on "go-autocomplete")
 (depends-on "go-eldoc")
 (depends-on "go-mode")
