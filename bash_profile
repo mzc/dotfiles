@@ -26,6 +26,10 @@ export PATH="${HOME}/.cask/bin:${PATH}"
 # for rust
 export PATH="${HOME}/.cargo/bin:${PATH}"
 
+# for go
+export GOPATH="${HOME}/go:${HOME}/mygo"
+export PATH="${HOME}/go/bin:${PATH}"
+
 # off beep if is in X session
 if xhost >& /dev/null ; then
     xset b off
