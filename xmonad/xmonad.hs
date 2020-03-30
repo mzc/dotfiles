@@ -56,7 +56,7 @@ myConfig = defaultConfig
      }
            
 myModMask            = mod4Mask
-myWorkspaces         = ["1:term","2:emacs","3:email","4:www","5:ebook","6:app","7:im", "8:virt", "9:dual"]
+myWorkspaces         = ["1:www","2:term","3:emacs","4:email","5:ebook","6:app","7:im", "8:virt", "9:dual"]
 myTerminal           = "urxvt"
 myNormalBorderColor  = "grey"
 myFocusedBorderColor = "yellow"
@@ -72,9 +72,10 @@ myTheme = defaultTheme { decoHeight           = 16
                         , inactiveBorderColor = "#000000"
                         }
 
-myLayoutHook = onWorkspace "2:emacs" emacsLayout
-             $ onWorkspace "3:email" emailLayout
-             $ onWorkspace "4:www"   wwwLayout
+myLayoutHook = onWorkspace "1:www"   wwwLayout
+             $ onWorkspace "2:term"  termLayout
+             $ onWorkspace "3:emacs" emacsLayout
+             $ onWorkspace "4:email" emailLayout
              $ onWorkspace "5:ebook" ebookLayout
              $ onWorkspace "6:app"   appLayout
              $ onWorkspace "7:im"    imLayout
@@ -82,9 +83,10 @@ myLayoutHook = onWorkspace "2:emacs" emacsLayout
     where
         standardLayouts = tiled                 ||| tabbedLayout
         
-        emacsLayout     = Mirror bigMasterTiled ||| tabbedLayout
-        emailLayout     = Mirror bigMasterTiled ||| tabbedLayout
         wwwLayout       = Mirror bigMasterTiled ||| tabbedLayout
+        emacsLayout     = Mirror bigMasterTiled ||| tabbedLayout
+        termLayout      = Mirror bigMasterTiled ||| tabbedLayout        
+        emailLayout     = Mirror bigMasterTiled ||| tabbedLayout
         ebookLayout     = Mirror bigMasterTiled ||| tabbedLayout
         appLayout       = floatLayout           ||| tabbedLayout
         imLayout        = withIM (1%7) (ClassName "Tkabber") Grid ||| tabbedLayout
