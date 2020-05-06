@@ -69,14 +69,11 @@
               ")?\\|ochastic\\)\\)\\|Time\\|Volume\\|WPR\\)\\)\\>")
      . font-lock-function-name-face)))
 
-(add-hook 'c-mode-common-hook
-	  (lambda ()
-	    (setq indent-tabs-mode nil)
-	    (setq c-basic-offset 4)))
-
 ;;;###autoload
 (define-derived-mode mql-mode c-mode "mq4"
   "Major mode for Mql files."
-  (font-lock-add-keywords nil mql-mode-keywords))
+  (font-lock-add-keywords nil mql-mode-keywords)
+  (setq indent-tabs-mode nil)
+  (c-set-style "k&r"))
 
 (provide 'mql-mode)

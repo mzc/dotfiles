@@ -25,15 +25,18 @@
                          c-lineup-gcc-asm-reg
                          c-lineup-arglist-tabs-only))))))
 
-(add-hook 'c-mode-hook
-          (lambda ()
-	    (setq indent-tabs-mode t)
-	    (c-set-style "linux-tabs-only")))
+(setq indent-tabs-mode t)
+(setq c-default-style "linux-tabs-only")
 
-(add-hook 'c++-mode-hook
-          (lambda ()
-	    (setq indent-tabs-mode t)
-	    (c-set-style "linux-tabs-only")))
+;; (add-hook 'c-mode-hook
+;;           (lambda ()
+;; 	    (setq indent-tabs-mode t)
+;; 	    (c-set-style "linux-tabs-only")))
+
+;; (add-hook 'c++-mode-hook
+;;           (lambda ()
+;; 	    (setq indent-tabs-mode t)
+;; 	    (c-set-style "linux-tabs-only")))
 
 ;(add-hook 'c-mode-hook
 ;          (lambda ()
