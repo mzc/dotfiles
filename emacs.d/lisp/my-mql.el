@@ -73,7 +73,8 @@
 (define-derived-mode mql-mode c-mode "mq4"
   "Major mode for Mql files."
   (font-lock-add-keywords nil mql-mode-keywords)
+  (c-set-style "k&r")
   (setq indent-tabs-mode nil)
-  (c-set-style "k&r"))
+  (setq c-basic-offset 4))
 
 (provide 'mql-mode)
