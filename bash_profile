@@ -30,6 +30,9 @@ export PATH="${HOME}/.cargo/bin:${PATH}"
 export GOPATH="${HOME}/go:${HOME}/mygo"
 export PATH="${HOME}/go/bin:${PATH}"
 
+# for python pipenv
+export PATH="${HOME}/.local/bin:${PATH}"
+
 # off beep if is in X session
 if xhost >& /dev/null ; then
     xset b off
