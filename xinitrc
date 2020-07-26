@@ -11,8 +11,6 @@ fcitx &
 
 setxkbmap -option ctrl:swapcaps &
 unclutter &
-keynav &
-synclient TouchpadOff=1
 
 while true
 do
