@@ -20,10 +20,10 @@ URxvt.tintcolor:        #151515
 URxvt.depth:            24
 URxvt.visualBall:       true
 
-URxvt*font:             xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true,xft:WenQuanYi ZenHei Mono-10
-URxvt*boldFont:         xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true:bold,xft:WenQuanYi ZenHei Mono-10:Bol
-URxvt*italicFont:       xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true:italic,xft:WenQuanYi ZenHei Mono-10
-URxvt*bolditalicFont:   xft:DejaVu Sans Mono:pixelsize=13:antialias=true:hinting=true:bold:italic,xft:WenQuanYi ZenHei Mono-10
+URxvt*font:             xft:Hack:pixelsize=16:antialias=true:hinting=true,xft:Source Han Sans CN
+URxvt*boldFont:         xft:Hack:pixelsize=16:antialias=true:hinting=true:bold,xft:Source Han Sans CN
+URxvt*italicFont:       xft:Hack:pixelsize=16:antialias=true:hinting=true:italic,xft:Source Han Sans CN
+URxvt*bolditalicFont:   xft:Hack:pixelsize=16:antialias=true:hinting=true:bold:italic,xft:Source Han Sans CN
 
 URxvt*perl-ext-common:  default,matcher,clipboard
 URxvt*urlLauncher:      urxvt-to-uzbl.sh
