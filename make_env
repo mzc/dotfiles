@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for l in Xdefaults bash_aliases bash_profile emacs.d eshell global_gitignore inputrc mailcap mutt urlview xinitrc xmobarrc xmonad 
+for l in Xdefaults bash_aliases bash_profile bashrc emacs.d eshell global_gitignore inputrc mailcap mutt urlview xinitrc xmobarrc xmonad
 do
     ln -snf "dotfiles/${l}" "${HOME}/.${l}"
 done
