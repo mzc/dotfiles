@@ -1,11 +1,3 @@
-# if running bash
-if [ -n "${BASH_VERSION}" ]; then
-    # include .bashrc if it exists
-    if [ -f "${HOME}/.bashrc" ]; then
-	. "${HOME}/.bashrc"
-    fi
-fi
-
 export TERM=xterm
 export EDITOR='emacsclient -c -a ""'
 
@@ -33,4 +25,9 @@ fi
 if [ -d "${HOME}/go" ]; then
     export GOPATH="${HOME}/go:${HOME}/mygo"
     export PATH="${HOME}/go/bin:${PATH}"
+fi
+
+# include .bashrc if it exists
+if [ -f "${HOME}/.bashrc" ]; then
+    . "${HOME}/.bashrc"
 fi
