@@ -5,6 +5,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+# off beep if is in X session
+if xhost >& /dev/null ; then
+    xset b off
+fi
+
 if [ -f ~/.bash_aliases ]; then
 	. ~/.bash_aliases
 fi

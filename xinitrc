@@ -1,7 +1,3 @@
-if [ -f "$HOME/.bash_profile" ]; then
-    . "$HOME/.bash_profile"
-fi
-
 export LC_CTYPE="en_US.UTF-8"
 export XMODIFIERS=@im=fcitx
 export GTK_IM_MODULE=fcitx
