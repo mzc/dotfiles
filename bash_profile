@@ -9,26 +9,28 @@ fi
 export TERM=xterm
 export EDITOR='emacsclient -c -a ""'
 
-PATH="/sbin:/usr/sbin:${PATH}"
+export PATH="/sbin:/usr/sbin:${PATH}"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "${HOME}/local/bin" ] ; then
-    PATH="${HOME}/local/bin:${PATH}"
+    export PATH="${HOME}/local/bin:${PATH}"
 fi
-
 if [ -d "${HOME}/scripts" ]; then
-    PATH="${HOME}/scripts:${PATH}"
+    export PATH="${HOME}/scripts:${PATH}"
 fi
 
 # for cask
-export PATH="${HOME}/.cask/bin:${PATH}"
+if [ -d "${HOME}/.cask/bin" ]; then
+    export PATH="${HOME}/.cask/bin:${PATH}"
+fi
 
 # for rust
-export PATH="${HOME}/.cargo/bin:${PATH}"
+if [ -d "${HOME}/.cargo/bin" ]; then
+    export PATH="${HOME}/.cargo/bin:${PATH}"
+fi
 
 # for go
-export GOPATH="${HOME}/go:${HOME}/mygo"
-export PATH="${HOME}/go/bin:${PATH}"
-
-# for python pipenv
-export PATH="${HOME}/.local/bin:${PATH}"
+if [ -d "${HOME}/go" ]; then
+    export GOPATH="${HOME}/go:${HOME}/mygo"
+    export PATH="${HOME}/go/bin:${PATH}"
+fi
