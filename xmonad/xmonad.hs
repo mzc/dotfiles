@@ -56,7 +56,7 @@ myConfig = defaultConfig
      }
            
 myModMask            = mod4Mask
-myWorkspaces         = ["1:www","2:term","3:emacs","4:email","5:ebook","6:app","7:im", "8:virt", "9:dual"]
+myWorkspaces         = ["1:console","2:www","3:emacs","4:ebook","5:mt4","6:virt","7:bt","8:game", "9:work1", "0:work2"]
 myTerminal           = "urxvt"
 myNormalBorderColor  = "grey"
 myFocusedBorderColor = "yellow"
@@ -72,30 +72,32 @@ myTheme = defaultTheme { decoHeight           = 16
                         , inactiveBorderColor = "#000000"
                         }
 
-myLayoutHook = onWorkspace "1:www"   wwwLayout
-             $ onWorkspace "2:term"  termLayout
-             $ onWorkspace "3:emacs" emacsLayout
-             $ onWorkspace "4:email" emailLayout
-             $ onWorkspace "5:ebook" ebookLayout
-             $ onWorkspace "6:app"   appLayout
-             $ onWorkspace "7:im"    imLayout
+myLayoutHook = onWorkspace "1:console" termLayout
+             $ onWorkspace "2:www"     wwwLayout
+             $ onWorkspace "3:emacs"   emacsLayout
+             $ onWorkspace "4:ebook"   ebookLayout
+             $ onWorkspace "5:mt4"     appLayout
+             $ onWorkspace "6:virt"    termLayout
+             $ onWorkspace "7:bt"      appLayout
+             $ onWorkspace "8:game"    gameLayout
+             $ onWorkspace "9:work1"   standardLayouts
+             $ onWorkspace "0:work2"   standardLayouts
              $ standardLayouts
     where
         standardLayouts = tiled                 ||| tabbedLayout
         
+        termLayout      = Mirror bigMasterTiled ||| tabbedLayout
         wwwLayout       = Mirror bigMasterTiled ||| tabbedLayout
         emacsLayout     = Mirror bigMasterTiled ||| tabbedLayout
-        termLayout      = Mirror bigMasterTiled ||| tabbedLayout        
-        emailLayout     = Mirror bigMasterTiled ||| tabbedLayout
         ebookLayout     = Mirror bigMasterTiled ||| tabbedLayout
-        appLayout       = floatLayout           ||| tabbedLayout
-        imLayout        = withIM (1%7) (ClassName "Tkabber") Grid ||| tabbedLayout
+        appLayout       = Mirror bigMasterTiled ||| tabbedLayout
+        gameLayout      = Mirror bigMasterTiled ||| full
+        --imLayout        = withIM (1%7) (ClassName "Tkabber") Grid ||| tabbedLayout
 
-        tabbedLayout    = noBorders (tabbed shrinkText myTheme)
-        full 	        = noBorders Full
+        full            = noBorders (tabbed shrinkText myTheme)
+        tabbedLayout    = noBorders Full
         tiled           = smartBorders (ResizableTall 1 (2/100) (1/2) [])
         bigMasterTiled  = smartBorders (ResizableTall 1 (2/100) (2/3) [])
-        floatLayout     = simpleFloat
 
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
  
