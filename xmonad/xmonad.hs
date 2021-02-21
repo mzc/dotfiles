@@ -56,7 +56,7 @@ myConfig = defaultConfig
      }
            
 myModMask            = mod4Mask
-myWorkspaces         = ["1:console","2:www","3:emacs","4:ebook","5:mt4","6:virt","7:bt","8:game", "9:work1", "0:work2"]
+myWorkspaces         = ["1:console","2:www","3:emacs","4:doc","5:mt4","6:virt","7:bt","8:full", "9:work", "0:term"]
 myTerminal           = "urxvt"
 myNormalBorderColor  = "grey"
 myFocusedBorderColor = "yellow"
@@ -75,13 +75,13 @@ myTheme = defaultTheme { decoHeight           = 16
 myLayoutHook = onWorkspace "1:console" termLayout
              $ onWorkspace "2:www"     wwwLayout
              $ onWorkspace "3:emacs"   emacsLayout
-             $ onWorkspace "4:ebook"   ebookLayout
+             $ onWorkspace "4:doc"     docLayout
              $ onWorkspace "5:mt4"     appLayout
              $ onWorkspace "6:virt"    termLayout
              $ onWorkspace "7:bt"      appLayout
-             $ onWorkspace "8:game"    gameLayout
-             $ onWorkspace "9:work1"   standardLayouts
-             $ onWorkspace "0:work2"   standardLayouts
+             $ onWorkspace "8:full"    fullLayout
+             $ onWorkspace "9:work"    standardLayouts
+             $ onWorkspace "0:term"    standardLayouts
              $ standardLayouts
     where
         standardLayouts = tiled                 ||| tabbedLayout
@@ -89,9 +89,9 @@ myLayoutHook = onWorkspace "1:console" termLayout
         termLayout      = Mirror bigMasterTiled ||| tabbedLayout
         wwwLayout       = Mirror bigMasterTiled ||| tabbedLayout
         emacsLayout     = Mirror bigMasterTiled ||| tabbedLayout
-        ebookLayout     = Mirror bigMasterTiled ||| tabbedLayout
+        docLayout       = Mirror bigMasterTiled ||| tabbedLayout
         appLayout       = Mirror bigMasterTiled ||| tabbedLayout
-        gameLayout      = Mirror bigMasterTiled ||| full
+        fullLayout      = Mirror bigMasterTiled ||| full
         --imLayout        = withIM (1%7) (ClassName "Tkabber") Grid ||| tabbedLayout
 
         full            = noBorders (tabbed shrinkText myTheme)
