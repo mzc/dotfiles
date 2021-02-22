@@ -56,7 +56,7 @@ myConfig = defaultConfig
      }
            
 myModMask            = mod4Mask
-myWorkspaces         = ["1:console","2:www","3:emacs","4:doc","5:mt4","6:virt","7:bt","8:full", "9:work", "0:term"]
+myWorkspaces         = ["1:console","2:www","3:emacs","4:doc","5:mt4","6:virt","7:bt","8:full", "9:term"]
 myTerminal           = "urxvt"
 myNormalBorderColor  = "grey"
 myFocusedBorderColor = "yellow"
@@ -80,8 +80,7 @@ myLayoutHook = onWorkspace "1:console" termLayout
              $ onWorkspace "6:virt"    termLayout
              $ onWorkspace "7:bt"      appLayout
              $ onWorkspace "8:full"    fullLayout
-             $ onWorkspace "9:work"    standardLayouts
-             $ onWorkspace "0:term"    standardLayouts
+             $ onWorkspace "9:term"    standardLayouts
              $ standardLayouts
     where
         standardLayouts = tiled                 ||| tabbedLayout
