@@ -56,7 +56,7 @@ myConfig = defaultConfig
      }
            
 myModMask            = mod4Mask
-myWorkspaces         = ["1:console","2:www","3:emacs","4:doc","5:mt4","6:virt","7:bt","8:full", "9:term"]
+myWorkspaces         = ["1:console","2:www","3:emacs","4:doc","5:mt4","6:virt","7:bt","8:game", "9:term"]
 myTerminal           = "urxvt"
 myNormalBorderColor  = "grey"
 myFocusedBorderColor = "yellow"
@@ -79,22 +79,22 @@ myLayoutHook = onWorkspace "1:console" termLayout
              $ onWorkspace "5:mt4"     appLayout
              $ onWorkspace "6:virt"    termLayout
              $ onWorkspace "7:bt"      appLayout
-             $ onWorkspace "8:full"    fullLayout
+             $ onWorkspace "8:game"    gameLayout
              $ onWorkspace "9:term"    standardLayouts
              $ standardLayouts
     where
-        standardLayouts = tiled                 ||| tabbedLayout
+        standardLayouts = tiled                 ||| full
         
-        termLayout      = Mirror bigMasterTiled ||| tabbedLayout
-        wwwLayout       = Mirror bigMasterTiled ||| tabbedLayout
-        emacsLayout     = Mirror bigMasterTiled ||| tabbedLayout
-        docLayout       = Mirror bigMasterTiled ||| tabbedLayout
-        appLayout       = Mirror bigMasterTiled ||| tabbedLayout
-        fullLayout      = Mirror bigMasterTiled ||| full
+        termLayout      = Mirror bigMasterTiled ||| full
+        wwwLayout       = Mirror bigMasterTiled ||| full
+        emacsLayout     = Mirror bigMasterTiled ||| full
+        docLayout       = Mirror bigMasterTiled ||| full
+        appLayout       = Mirror bigMasterTiled ||| full
+        gameLayout      = Mirror bigMasterTiled ||| tabbedLayout
         --imLayout        = withIM (1%7) (ClassName "Tkabber") Grid ||| tabbedLayout
 
-        full            = noBorders (tabbed shrinkText myTheme)
-        tabbedLayout    = noBorders Full
+        tabbedLayout    = noBorders (tabbed shrinkText myTheme)
+        full            = noBorders Full
         tiled           = smartBorders (ResizableTall 1 (2/100) (1/2) [])
         bigMasterTiled  = smartBorders (ResizableTall 1 (2/100) (2/3) [])
 
