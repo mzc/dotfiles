@@ -56,7 +56,7 @@ myConfig = defaultConfig
      }
            
 myModMask            = mod4Mask
-myWorkspaces         = ["1:console","2:www","3:emacs","4:doc","5:mt4","6:virt","7:bt","8:game", "9:term"]
+myWorkspaces         = ["1:console","2:www","3:doc","4:emacs","5:mt4","6:virt","7:bt","8:game", "9:term"]
 myTerminal           = "urxvt"
 myNormalBorderColor  = "grey"
 myFocusedBorderColor = "yellow"
@@ -74,8 +74,8 @@ myTheme = defaultTheme { decoHeight           = 16
 
 myLayoutHook = onWorkspace "1:console" termLayout
              $ onWorkspace "2:www"     wwwLayout
-             $ onWorkspace "3:emacs"   emacsLayout
-             $ onWorkspace "4:doc"     docLayout
+             $ onWorkspace "3:doc"     docLayout
+             $ onWorkspace "4:emacs"   emacsLayout
              $ onWorkspace "5:mt4"     appLayout
              $ onWorkspace "6:virt"    termLayout
              $ onWorkspace "7:bt"      appLayout
