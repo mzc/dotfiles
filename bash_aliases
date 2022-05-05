@@ -2,8 +2,8 @@
 
 alias rm='rm -i'
 
-alias ls='ls --color=auto'
 alias la='ls -A'
+alias lc='ls --color=auto'
 alias ll='ls -l'
 alias l.='ls -d'
 alias l='ls -CF'
