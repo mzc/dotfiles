@@ -43,7 +43,7 @@ myPP = xmobarPP
 
 toggleStructsKey XConfig { XMonad.modMask = modMask } = (modMask, xK_b)
 
-myConfig = defaultConfig 
+myConfig = def
      { modMask            = myModMask
      , focusFollowsMouse  = myFocusFollowsMouse
      , terminal           = myTerminal
@@ -65,12 +65,13 @@ myFocusFollowsMouse  = False
 myManageHook = insertPosition Below Newer
 
 --- My Theme For Tabbed layout
-myTheme = defaultTheme { decoHeight           = 16
-                        , activeColor         = "#a6c292"
-                        , activeBorderColor   = "#a6c292"
-                        , activeTextColor     = "#000000"
-                        , inactiveBorderColor = "#000000"
-                        }
+myTheme = def
+     { decoHeight           = 16
+     , activeColor         = "#a6c292"
+     , activeBorderColor   = "#a6c292"
+     , activeTextColor     = "#000000"
+     , inactiveBorderColor = "#000000"
+     }
 
 myLayoutHook = onWorkspace "1:console" termLayout
              $ onWorkspace "2:www"     wwwLayout
